@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My calculator</title>
+    <link rel="stylesheet" href="/sass/newstyle.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="head">
+            <h1>My calculator</h1>
+        </header>
+
+        <div id="numbers">
+            <button id="seven" class="numbers" onclick="displayButtonInfo(7)">7</button>
+            <button id="eight" class="numbers" onclick="displayButtonInfo(8)">8</button>
+            <button id="nine" class="numbers" onclick="displayButtonInfo(9)">9</button>
+            <button id="four" class="numbers" onclick="displayButtonInfo(4)">4</button>
+            <button id="five" class="numbers" onclick="displayButtonInfo(5)">5</button>
+            <button id="six" class="numbers" onclick="displayButtonInfo(6)">6</button>
+            <button id="one" class="numbers" onclick="displayButtonInfo(1)">1</button>
+            <button id="two" class="numbers" onclick="displayButtonInfo(2)">2</button>
+            <button id="three" class="numbers" onclick="displayButtonInfo(3)">3</button>
+            <button id="plus-minus" onclick="displayButtonInfo('±')">±</button>
+            <button id="zero" class="numbers" onclick="displayButtonInfo(0)">0</button>
+            <button id="dot" onclick="displayButtonInfo('.')">.</button>
+
+        </div>
+
+        <div id="left">
+            <button id="info" class="left" onclick="get_info()"><img src="/img/info.png" alt=""></button>
+            <button class="left"><img src="/img/lightbulb.png" alt="" onclick="changemode()"></button>
+            <button class="left"><img src="/img/history.png" alt=""></button>
+            <button class="left" id="sci"><img src="/img/square-root.png" alt=""></button>
+            <button class="left" id="cloud"><img src="/img/cloud.png" alt=""></button>
+            <button class="left"></button>
+            <button class="left"></button>
+        </div>
+
+        <div id="mid">
+            <button id="C" onclick="reset()">C</button>
+            <button id="screen"></button>
+        </div>
+
+        <div id="right">
+            <button class="right"><img id="settings" src="/img/settings.png" alt=""></button>
+            <button class="right" id="back">🔙</button>
+            <button class="right op" onclick="displayButtonInfo('/')">/</button>
+            <button class="right op" onclick="displayButtonInfo('x')">*</button>
+            <button class="right op" onclick="displayButtonInfo('-')">-</button>
+            <button class="right op" onclick="displayButtonInfo('+')">+</button>
+            <button id="equal" class="right" onclick="calculate()">=</button>
+        </div>
+
+        <div class="leftsidebar">
+
+        </div>
+
+        <div class="rightsidebar">
+            <span id="scientific">scientific</span>
+
+            <button id="x2">&#178;x</button>
+            <button id="S-root">&#178;&#8730;x</button>
+            <button id="power">&#696;X</button>
+            <button id="root">&#696 &#8730;</button>
+            <button id="mod">mod</button>
+            <button id="pi">&#960;</button>
+
+            <button id="base">base2</button>
+
+
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
