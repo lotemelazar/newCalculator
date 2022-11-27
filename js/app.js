@@ -12,6 +12,7 @@ function get_info() {
 //     element.classList.toggle("dark_mode");
 // }
 function sciMod() {
+    
     var e = document.body;
     e.classList.toggle("scimod");
 }
