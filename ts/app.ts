@@ -20,9 +20,6 @@ function sciMod() {
     var e = document.body;
     e.classList.toggle("scimod");
 
-
-
-
 }
 
 function Reset(): void {
